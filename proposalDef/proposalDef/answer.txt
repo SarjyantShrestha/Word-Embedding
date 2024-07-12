@@ -1,0 +1,62 @@
+Project title: Word Embedding in Nepali Language
+1.What is the main objective of your research on word embedding in the Nepali language?
+    To develop context dependent word embedding for Nepali language.
+
+2. Why is word embedding important for natural language processing tasks in Nepali?
+    Word embeddings are important for NLP in not only Nepali but in any language because they capture semantic meanings, improve efficiency, and enhance performance in various language tasks. By building a proper word embedding, We can derive numerous models for tasks such as sentiment analysis, machine translation, text classification, and named entity recognition and so on.
+
+3. What specific challenges do you anticipate in developing word embeddings for the Nepali language?
+    We anticipate challenges such as a lack of computational power to train the model using a large dataset, limited availability of high-quality and diverse Nepali text corpora, handling complex morphological variations.
+
+4. What sources of data will you use to train your word embedding models?
+    We will use a pre-existing dataset given by NepBERTa (https://nepberta.github.io/) and if that isn't enough then we will use web scraping techniques to improve our datasets.
+
+5. How will you preprocess the Nepali text data before training the word embeddings?
+    We will preprocess the Nepali text data in following ways:
+    a.) Text Normalization:  Convert all text to a consistent format, such as lowercasing and removing punctuation and special characters.
+    b.) Tokenization: Split the text into individual words or tokens using a tokenizer designed for Nepali, which can handle specific linguistic features like compound words and suffixes.
+    c.) Stemming/Lemmatization: Reduce words to their root form to handle morphological variations.
+    Similarly, more techniques are to be studied.
+
+6. Can you explain the difference between word-level and character-level embeddings, and which approach will you use for Nepali?
+    Word-level embedding: It represents words as fixed-length vectors, where each word in the vocabulary is assigned a unique vector.
+    Character-Level Embeddings: Represent words as sequences of character embeddings.
+    For now, we are leaning towards word level embedding because from research till now, it seems easier than character level embedding and it probably will be better for capturing context of the sentence.
+
+7. What neural network architectures will you use for training word embeddings (e.g., Word2Vec,
+Glove, FastText)?
+    First we will try transformer based model like BERT or other similar models. Then dependening on the result of training, we will further decide if we need to switch options.
+
+8. How will you evaluate the quality and effectiveness of the word embeddings for Nepali?
+    The quality and effectiveness of the word embedding for Nepali language can be evaluated by developing a chatGPT like model or any other analyzers.
+
+10. How will you handle out-of-vocabulary words and rare words in your word embedding models?
+    From our research till now, we found a technique of assigning OOV tokens. A special token (e.g., <UNK>) to represent OOV words during training and inference. This token is used as the embedding representation for any unseen words encountered during runtime. We are looking forward to use this method and further methods are to be studied.
+
+11. Can you discuss any potential biases in your word embedding models, and how do you plan to mitigate them?
+
+12. What techniques will you use to visualize and interpret the learned word embeddings?
+    In order to visualize and interpret the learned word embeddings we will have to create a tool like pdf analyzer or a chat bot similar to chatgpt. And BLEU score can be helpful in determining this factor.
+
+9. What criteria will you use to assess the performance of your word embedding models?
+
+13. How do you plan to ensure the scalability and efficiency of your word embedding models for large- scale applications?
+
+14. What role does linguistic knowledge and domain-specific information play in the development of word embeddings for Nepali?
+
+15. Can you explain the process of fine-tuning pre-trained word embeddings for specific downstream
+tasks in Nepali?
+
+16. How will you address the issue of data sparsity in Nepali text corpora during the training of word embeddings?
+
+17. What are the potential applications of word embeddings in Nepali language processing (e.g., sentiment analysis, machine translation)?
+    Word embeddings in Nepali language processing has very diverse application across various NLP tasks and some of them are:
+    Sentiment Analysis, Machine Translation, Named Entity Recognition, Text Classification, Text Summarization, Dialectal Analysis and so on.
+
+18. How will you handle the challenge of polysemy and context-dependent word meanings in Nepali?
+
+
+19. Can you discuss any preliminary results or findings from your initial experiments with Nepali word embeddings?
+
+20. What are the long-term goals and potential advancements in the field of word embedding for the Nepali language?
+    As we are currently aware of powerful LLMs like ChatGPT, our long-term goals and potential advancements in the field of world embedding for Nepali language is to be able to create a solid foundation for training and fine-tuning embeddings tailored for Nepali language. This is to empower the development of sophisticated LLMs capable of comprehending and generating Nepali text with high accuracy and contextual relevance.

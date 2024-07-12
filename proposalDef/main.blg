@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: chapter/chapter_1.aux
+A level-1 auxiliary file: chapter/chapter_2.aux
+A level-1 auxiliary file: chapter/TheoriticalBaackground.aux
+A level-1 auxiliary file: chapter/Methodology.aux
+A level-1 auxiliary file: chapter/System_Design.aux
+A level-1 auxiliary file: chapter/Implementation_Plan.aux
+A level-1 auxiliary file: chapter/expected_outcome.aux
+The style file: unsrt.bst
+Database file #1: ref.bib
+Warning--entry type for "300D" isn't style-file defined
+--line 145 of file ref.bib
+Warning--empty booktitle in NepaliBERT
+Warning--empty booktitle in questionanswer
+Warning--empty author in reviewOnWordEmbedding
+Warning--empty booktitle in reviewOnWordEmbedding
+Warning--empty booktitle in Singh2019NepaliMT
+Warning--empty booktitle in kaushal2016
+Warning--empty booktitle in basnet2018improving
+You've used 26 entries,
+            1791 wiz_defined-function locations,
+            594 strings with 8784 characters,
+and the built_in function-call counts, 6590 in all, are:
+= -- 526
+> -- 366
+< -- 10
++ -- 130
+- -- 104
+* -- 398
+:= -- 986
+add.period$ -- 76
+call.type$ -- 26
+change.case$ -- 26
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 300
+empty$ -- 656
+format.name$ -- 104
+if$ -- 1528
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 16
+newline$ -- 126
+num.names$ -- 33
+pop$ -- 150
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 196
+stack$ -- 0
+substring$ -- 302
+swap$ -- 107
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 56
+width$ -- 28
+write$ -- 263
+(There were 8 warnings)
