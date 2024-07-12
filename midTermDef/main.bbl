@@ -1,0 +1,126 @@
+\begin{thebibliography}{10}
+
+\bibitem{vaswani2023attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need, 2023.
+
+\bibitem{Gundapu}
+Sunil Gundapu and Radhika Mamidi.
+\newblock Transformer based automatic covid-19 fake news detection system, 01 2021.
+
+\bibitem{asudani2023impact}
+Deepak~S Asudani, Narendra~K Nagwani, and Pradeep Singh.
+\newblock Impact of word embedding models on text analytics in deep learning environment: a review.
+\newblock {\em Artificial Intelligence Review}, 22(1):1--81, Feb 2023.
+\newblock Epub ahead of print.
+
+\bibitem{NepaliBERT}
+Shushanta Pudasaini, Subarna Shakya, Aakash Tamang, Sajjan Adhikari, Sunil Thapa, and Sagar Lamichhane.
+\newblock Nepalibert: Pre-training of masked language model in nepali corpus.
+\newblock pages 325--330, 10 2023.
+
+\bibitem{Wang_Wang_Chen_Wang_Kuo_2019}
+Bin Wang, Angela Wang, Fenxiao Chen, Yuncheng Wang, and C.-C.~Jay Kuo.
+\newblock Evaluating word embedding models: methods and experimental results.
+\newblock {\em APSIPA Transactions on Signal and Information Processing}, 8:e19, 2019.
+
+\bibitem{enwiki:1219561882}
+{Wikipedia contributors}.
+\newblock Word embedding --- {Wikipedia}{,} the free encyclopedia, 2024.
+\newblock [Online; accessed 4-May-2024].
+
+\bibitem{moreo2019wordclass}
+Alejandro Moreo, Andrea Esuli, and Fabrizio Sebastiani.
+\newblock Word-class embeddings for multiclass text classification, 2019.
+
+\bibitem{turian-etal-2010-word}
+Joseph Turian, Lev-Arie Ratinov, and Yoshua Bengio.
+\newblock Word representations: A simple and general method for semi-supervised learning.
+\newblock In Jan Haji{\v{c}}, Sandra Carberry, Stephen Clark, and Joakim Nivre, editors, {\em Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics}, pages 384--394, Uppsala, Sweden, July 2010. Association for Computational Linguistics.
+
+\bibitem{questionanswer}
+Stefanie Tellex, Boris Katz, Jimmy Lin, Aaron Fernandes, and Gregory Marton.
+\newblock Quantitative evaluation of passage retrieval algorithms for question answering.
+\newblock pages 41--47, 07 2003.
+
+\bibitem{sentimentanalysis}
+Richard Socher, Jeffrey Pennington, Eric~H. Huang, Andrew~Y. Ng, and Christopher~D. Manning.
+\newblock Semi-supervised recursive autoencoders for predicting sentiment distributions.
+\newblock In Regina Barzilay and Mark Johnson, editors, {\em Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing}, pages 151--161, Edinburgh, Scotland, UK., July 2011. Association for Computational Linguistics.
+
+\bibitem{wordembedding}
+Felipe Almeida and Geraldo Xexéo.
+\newblock Word embeddings: A survey, 2023.
+
+\bibitem{reviewOnWordEmbedding}
+A comprehensive review on word embedding techniques.
+\newblock pages 538--543, 2023.
+
+\bibitem{niraula2020linguistic}
+Nobal~B. Niraula, Saurab Dulal, and Diwa Koirala.
+\newblock Linguistic taboos and euphemisms in nepali, 2020.
+
+\bibitem{koirala-niraula-2021-npvec1}
+Pravesh Koirala and Nobal~B. Niraula.
+\newblock {NPV}ec1: Word embeddings for {N}epali - construction and evaluation.
+\newblock In Anna Rogers, Iacer Calixto, Ivan Vuli{\'c}, Naomi Saphra, Nora Kassner, Oana-Maria Camburu, Trapit Bansal, and Vered Shwartz, editors, {\em Proceedings of the 6th Workshop on Representation Learning for NLP (RepL4NLP-2021)}, pages 174--184, Online, August 2021. Association for Computational Linguistics.
+
+\bibitem{Bhatta_Shrestha_Nepal_Pandey_Koirala_2020}
+Janardan Bhatta, Dipesh Shrestha, Santosh Nepal, Saurav Pandey, and Shekhar Koirala.
+\newblock Efficient estimation of nepali word representations in vector space.
+\newblock {\em Journal of Innovations in Engineering Education}, 3(1):71–77, Mar. 2020.
+
+\bibitem{Singh2019NepaliMT}
+Oyesh~Mann Singh.
+\newblock Nepali multi-class text classiﬁcation.
+\newblock 2019.
+
+\bibitem{shahi2018nepali}
+Tej~Bahadur Shahi and Ashok~Kumar Pant.
+\newblock Nepali news classification using naive bayes, support vector machines and neural networks.
+\newblock In {\em 2018 international conference on communication information and computing technology (iccict)}, pages 1--5. IEEE, 2018.
+
+\bibitem{ghosh2018class}
+Samujjwal Ghosh and Maunendra~Sankar Desarkar.
+\newblock Class specific tf-idf boosting for short-text classification: Application to short-texts generated during disasters.
+\newblock In {\em Companion Proceedings of the The Web Conference 2018}, pages 1629--1637, 2018.
+
+\bibitem{kaushal2016}
+Kaushal Kafle, Diwas Sharma, Aayush Subedi, and Arun Timalsina.
+\newblock Improving nepali document classification by neural network.
+\newblock 03 2018.
+
+\bibitem{basnet2018improving}
+Ashok Basnet and Arun Timalsina.
+\newblock Improving nepali news recommendation using classification based on lstm recurrent neural networks.
+\newblock pages 138--142, 10 2018.
+
+\bibitem{300D}
+Rabindra Lamsal.
+\newblock 300-dimensional word embeddings for nepali language, 2019.
+
+\bibitem{rajan_nepalibert_2021}
+Rajan.
+\newblock Nepalibert.
+\newblock \url{https://huggingface.co/Rajan/NepaliBERT}, 2021.
+
+\bibitem{milanmg_bert-nepali_2022}
+Milanmg.
+\newblock Bert-nepali.
+\newblock \url{https://huggingface.co/Milanmg/Bert-Nepali}, 2022.
+
+\bibitem{NEURIPS2019_c04c19c2}
+Alexis CONNEAU and Guillaume Lample.
+\newblock Cross-lingual language model pretraining.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle Alch\'{e}-Buc, E.~Fox, and R.~Garnett, editors, {\em Advances in Neural Information Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+
+\bibitem{bommasani2021opportunities}
+Rishi Bommasani, Drew~A Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael~S Bernstein, Jeannette Bohg, Antoine Bosselut, Emma Brunskill, et~al.
+\newblock On the opportunities and risks of foundation models.
+\newblock {\em arXiv preprint arXiv:2108.07258}, 2021.
+
+\bibitem{devlin2019bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language understanding, 2019.
+
+\end{thebibliography}

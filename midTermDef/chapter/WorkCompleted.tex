@@ -1,0 +1,32 @@
+\chapter{Work Completed}
+\section{Data Accumulation}
+We began our project by searching for Nepali documents from various government websites. Many of these documents were in ASCII Preeti Unicode. However, converting these Preeti encoded texts into standard Nepali Unicode proved challenging due to the unique characters used in the Nepali language. After extensive searching, we identified a reliable source: the Nepal Law Commission website (\url{https://lawcommission.gov.np/}), which provides documents in standard Nepali Unicode. This site became our primary source of Nepali legal texts.
+
+\subsection{Web Scraping}
+We web scraped approximately 890 PDF documents from the Nepal Law Commission website. This extensive collection provided us with a substantial corpus of Nepali legal texts. But we are aware these datasets are not quiet enough for a proper model training.
+
+\subsection{Data Merging}
+Each scraped PDF was read and its content was merged into a single text file, named \texttt{new.txt}. This file served as the consolidated dataset for our analysis.
+
+\subsection{Initial Data Statistics}
+From the \texttt{new.txt} file, we observed the following:
+\begin{itemize}
+    \item Total words: 4,356,394
+    \item Number of unfiltered characters (including Nepali and English alphabets, numbers, and special characters): 31,464,203
+\end{itemize}
+
+\subsection{Data Filtering}
+We filtered out all numbers, special characters, and English alphabets to retain only Nepali words. The statistics after filtering were:
+\begin{itemize}
+    \item Total words: 4,208,028
+    \item Total characters: 26,496,110
+\end{itemize}
+
+\subsection{Tokenization}
+The filtered words (4,208,028) were tokenized to prepare the data for further analysis. Tokenization helped in segmenting the text into individual words or tokens.
+We identified a total of 28,169 unique tokens from the corpus.
+
+\subsection{Token Frequency Filtering}
+To ensure the accuracy of our dataset and eliminate misspelled words, we filtered out tokens that had a frequency count of 5 or less. This step helped in retaining only the meaningful and commonly used words in the Nepali legal texts.
+
+The tokenization process has been completed, and the final dataset consists of tokens that are filtered to ensure that each token appears more than 5 times, confirming its validity as a real word.
