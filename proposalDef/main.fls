@@ -1,7 +1,7 @@
-PWD /home/rapzy/Downloads/Vector-Embedding-major
+PWD /home/rapzy/Downloads/Vector-Embedding-major/proposalDef/proposalDef
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/xetex/xelatex.fmt
-INPUT /home/rapzy/Downloads/Vector-Embedding-major/main.tex
+INPUT /home/rapzy/Downloads/Vector-Embedding-major/proposalDef/proposalDef/main.tex
 OUTPUT main.log
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls

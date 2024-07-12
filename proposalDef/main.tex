@@ -30,6 +30,7 @@
 
 
 \usepackage{fontspec}
+
 \newfontfamily{\devanagarifont}[Script=Devanagari, Path=./]{NotoSerifDevanagari-VariableFont_wdth,wght.ttf}
 
 
@@ -58,7 +59,7 @@
     \include{chapter/TheoriticalBaackground}
     \include{chapter/Methodology}
     \include{chapter/System_Design}
-     \include{chapter/Implementation_Plan}
+    \include{chapter/Implementation_Plan}
     \include{chapter/expected_outcome}
    
     %\printbibliography[title={References}] % Print bibliography with the title "References"
@@ -66,8 +67,8 @@
     %\bibliography{ref}
     %\addcontentsline{toc}{section}{Bibliography}
     \newpage
-      \renewcommand{\bibname}{References}
+      % \renewcommand{\bibname}{References}
       \bibliographystyle{unsrt}
-       \bibliography{ref} % Replace "ref" with your bibliography file name
+       \bibliography{ref}
        \addcontentsline{toc}{chapter}{References}
 \end{document}
