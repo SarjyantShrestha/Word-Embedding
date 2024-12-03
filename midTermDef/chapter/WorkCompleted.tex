@@ -1,32 +1,73 @@
 \chapter{Work Completed}
-\section{Data Accumulation}
-We began our project by searching for Nepali documents from various government websites. Many of these documents were in ASCII Preeti Unicode. However, converting these Preeti encoded texts into standard Nepali Unicode proved challenging due to the unique characters used in the Nepali language. After extensive searching, we identified a reliable source: the Nepal Law Commission website (\url{https://lawcommission.gov.np/}), which provides documents in standard Nepali Unicode. This site became our primary source of Nepali legal texts.
-
-\subsection{Web Scraping}
-We web scraped approximately 890 PDF documents from the Nepal Law Commission website. This extensive collection provided us with a substantial corpus of Nepali legal texts. But we are aware these datasets are not quiet enough for a proper model training.
-
-\subsection{Data Merging}
-Each scraped PDF was read and its content was merged into a single text file, named \texttt{new.txt}. This file served as the consolidated dataset for our analysis.
-
-\subsection{Initial Data Statistics}
-From the \texttt{new.txt} file, we observed the following:
+\section{Dataset Preparation}
 \begin{itemize}
-    \item Total words: 4,356,394
-    \item Number of unfiltered characters (including Nepali and English alphabets, numbers, and special characters): 31,464,203
+    \item \textbf{Data Loading:} The project uses the \textit{Kantipur} dataset, which consists of Nepali news articles. This data is loaded from a cleaned and combined TSV file. The data is organized into two columns: one for the \textit{title} of the article and another for the \textit{news content}.
+    \item \textbf{Text Processing:} The raw Nepali text from the dataset is processed for tokenization. The custom tokenizer ensures that the text is cleaned and normalized, addressing issues like extra spaces and Unicode variations in Nepali characters.
 \end{itemize}
 
-\subsection{Data Filtering}
-We filtered out all numbers, special characters, and English alphabets to retain only Nepali words. The statistics after filtering were:
+\section{Tokenizer Development}
 \begin{itemize}
-    \item Total words: 4,208,028
-    \item Total characters: 26,496,110
+    \item \textbf{NepaliTokenizer:} A specialized tokenizer was implemented for Nepali text, called \texttt{NepaliTokenizer}. This class was designed to handle the unique features of the Nepali language, including:
+    \begin{itemize}
+        \item \textit{Character Ranges:} It checks whether a character falls within the Devanagari script (the script used for Nepali) and processes it accordingly.
+        \item \textit{Punctuation Handling:} It accounts for Nepali punctuation marks (\textsanskrit{।}, \textsanskrit{॥}, and others) and ensures they are treated as distinct tokens during tokenization.
+        \item \textit{Suffix Handling:} Common Nepali suffixes and postpositions (like \textsanskrit{ले}, \textsanskrit{को}, \textsanskrit{बाट}) are identified and separated as individual tokens to preserve their semantic roles in the language.
+    \end{itemize}
+    \item \textbf{CustomBERTTokenizer:} A more advanced tokenizer, \texttt{CustomBERTTokenizer}, was built to handle:
+    \begin{itemize}
+        \item \textit{Vocabulary Building:} This tokenizer automatically builds a vocabulary of frequent words and tokens based on the input dataset. It dynamically updates the vocabulary while ensuring it does not exceed the predefined maximum size (30,000 tokens).
+        \item \textit{Token Masking:} During pretraining, certain tokens are randomly masked (\texttt{[MASK]}) to create a Masked Language Modeling (MLM) task, which is a core part of training BERT models.
+        \item \textit{Encoding:} The tokenizer converts raw text into token IDs, adding special tokens such as \texttt{[CLS]} (for classification), \texttt{[SEP]} (to separate segments), and \texttt{[PAD]} (for padding sequences to a uniform length).
+    \end{itemize}
 \end{itemize}
 
-\subsection{Tokenization}
-The filtered words (4,208,028) were tokenized to prepare the data for further analysis. Tokenization helped in segmenting the text into individual words or tokens.
-We identified a total of 28,169 unique tokens from the corpus.
+\section{Dataset Processing}
+\begin{itemize}
+    \item \textbf{Data Preparation for Pretraining:} The dataset is prepared specifically for BERT pretraining, where the model learns to predict masked tokens (a form of unsupervised learning). For each article in the dataset:
+    \begin{itemize}
+        \item \textit{Input Sequences:} The raw text is encoded into a sequence of token IDs.
+        \item \textit{Segment IDs:} Segment IDs are created, marking which tokens belong to which segment.
+        \item \textit{Masked Tokens:} For the MLM task, some tokens in the sequence are randomly masked, and the model is trained to predict these missing words. The masked tokens are tracked for loss calculation during training.
+    \end{itemize}
+\end{itemize}
 
-\subsection{Token Frequency Filtering}
-To ensure the accuracy of our dataset and eliminate misspelled words, we filtered out tokens that had a frequency count of 5 or less. This step helped in retaining only the meaningful and commonly used words in the Nepali legal texts.
+\section{Model Architecture}
+\begin{itemize}
+    \item \textbf{BERT Embedding Layer:} A custom embedding layer was built that includes:
+    \begin{itemize}
+        \item \textit{Token Embeddings:} Maps each token in the vocabulary to a dense vector.
+        \item \textit{Segment Embeddings:} Differentiates between multiple segments (useful for tasks like question answering).
+        \item \textit{Positional Embeddings:} Positional embeddings are added to provide information about the order of tokens in the sequence.
+        \item \textit{Dropout:} A dropout layer is included to prevent overfitting during training.
+    \end{itemize}
+    \item \textbf{Transformer Encoder:} The core of the BERT model is the Transformer Encoder, which processes sequences of token embeddings using attention mechanisms to capture relationships between tokens at various positions in the input sequence.
+    \item \textbf{Pretraining Head (MLM):} The MLM head predicts the original tokens that were masked during pretraining. This is achieved by using a linear layer over the final hidden states produced by the encoder.
+\end{itemize}
 
-The tokenization process has been completed, and the final dataset consists of tokens that are filtered to ensure that each token appears more than 5 times, confirming its validity as a real word.
+\section{Training Loop}
+\begin{itemize}
+    \item \textbf{Training Workflow:} The model is trained using a cross-entropy loss function, which measures how well the predicted token IDs match the original token IDs. The optimizer (Adam) updates the model parameters to minimize this loss. The training loop runs over multiple epochs.
+    \item \textbf{Testing Workflow:} The model's performance is evaluated on the test set after each epoch. The test loss is calculated using the same MLM loss function.
+    \item \textbf{Loss Tracking:} Loss values for both the training and testing datasets are recorded after each epoch, and these are saved into text files for further analysis.
+\end{itemize}
+
+\section{Data Splitting and Loader Implementation}
+\begin{itemize}
+    \item \textbf{Training and Test Split:} The dataset is divided into training and testing sets, with 80\% used for training and 20\% for testing.
+    \item \textbf{DataLoader Implementation:} DataLoaders are used to manage batching, shuffling, and pinning memory for efficient data loading during training and testing.
+\end{itemize}
+
+\section{Performance Metrics}
+Loss during training and testing is recorded and plotted against epochs to monitor performance improvements. A plot showing the loss values over epochs is generated, allowing us to monitor the model's training progress.
+Outputs:
+
+%SHOW GRAPHS
+
+\section{Pending Tasks}
+\begin{itemize}
+    \item Evaluate the trained BERT model on downstream Nepali NLP tasks.
+    \item Fine-tune the tokenizer and training hyperparameters for improved performance.
+    \item Explore potential model optimizations, such as reducing memory overhead for larger datasets.
+\end{itemize}
+
+\end{document}

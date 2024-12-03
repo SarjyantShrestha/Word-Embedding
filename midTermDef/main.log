@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.5.28)  12 JUL 2024 14:07
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.12.3)  3 DEC 2024 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/rapzy/Downloads/Vector-Embedding-major/midTermDef/main.tex
-(/home/rapzy/Downloads/Vector-Embedding-major/midTermDef/main.tex
+**/home/rapzy/Downloads/Word-Embedding/midTermDef/main.tex
+(/home/rapzy/Downloads/Word-Embedding/midTermDef/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/report.cls
@@ -765,7 +765,7 @@ Package fontspec Info: Font family
 (fontspec)             <->"[./NotoSerifDevanagari-VariableFont_wdth,wght.ttf]/OT:script=dev2;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- (./main.aux (./title.aux) (./intro.aux) (./chapter/chapter_1.aux) (./chapter/chapter_2.aux) (./chapter/TheoriticalBaackground.aux) (./chapter/Methodology.aux) (./chapter/WorkCompleted.aux) (./chapter/WorkToBeDone.aux) (./chapter/System_Design.aux) (./chapter/Implementation_Plan.aux) (./chapter/expected_outcome.aux))
+ (./main.aux (./title.aux) (./intro.aux) (./chapter/chapter_1.aux) (./chapter/chapter_2.aux) (./chapter/TheoriticalBaackground.aux) (./chapter/Methodology.aux) (./chapter/WorkCompleted.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -931,44 +931,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--39
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [2
-
-])
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [3] (./main.lof
+ [2
+
+] (./main.lof
 LaTeX Info: Redefining \rmfamily on input line 4.
 LaTeX Info: Redefining \sffamily on input line 4.
 LaTeX Info: Redefining \ttfamily on input line 4.
+
+
+LaTeX Warning: Citation `vaswani2023attention' on page iii undefined on input line 5.
+
 LaTeX Info: Redefining \rmfamily on input line 6.
 LaTeX Info: Redefining \sffamily on input line 6.
 LaTeX Info: Redefining \ttfamily on input line 6.
+
+LaTeX Warning: Citation `Gundapu' on page iii undefined on input line 7.
+
 LaTeX Info: Redefining \rmfamily on input line 9.
 LaTeX Info: Redefining \sffamily on input line 9.
 LaTeX Info: Redefining \ttfamily on input line 9.
 LaTeX Info: Redefining \rmfamily on input line 11.
 LaTeX Info: Redefining \sffamily on input line 11.
 LaTeX Info: Redefining \ttfamily on input line 11.
-LaTeX Info: Redefining \rmfamily on input line 17.
-LaTeX Info: Redefining \sffamily on input line 17.
-LaTeX Info: Redefining \ttfamily on input line 17.
 )
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [4
+ [3
 
 ]
 Overfull \hbox (37.10587pt too wide) in paragraph at lines 64--90
 [][] 
  []
 
-[5])
+[4])
 \openout2 = `chapter/chapter_1.aux'.
 
  (./chapter/chapter_1.tex
 Chapter 1.
+
+LaTeX Warning: Citation `asudani2023impact' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `NepaliBERT' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `Wang_Wang_Chen_Wang_Kuo_2019' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `asudani2023impact' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `enwiki:1219561882' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `moreo2019wordclass' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `turian-etal-2010-word' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `questionanswer' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `sentimentanalysis' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `wordembedding' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `reviewOnWordEmbedding' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation `niraula2020linguistic' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation `NepaliBERT' on page 1 undefined on input line 16.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--18
 
@@ -984,11 +1027,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--18
 
 
 
-] [2]) [3]
+]
+
+LaTeX Warning: Citation `koirala-niraula-2021-npvec1' on page 2 undefined on input line 19.
+
+
+LaTeX Warning: Citation `NepaliBERT' on page 2 undefined on input line 19.
+
+
+LaTeX Warning: Citation `NepaliBERT' on page 2 undefined on input line 19.
+
+[2]) [3]
 \openout2 = `chapter/chapter_2.aux'.
 
  (./chapter/chapter_2.tex
 Chapter 2.
+
+LaTeX Warning: Citation `Bhatta_Shrestha_Nepal_Pandey_Koirala_2020' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Singh2019NepaliMT' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `shahi2018nepali' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `ghosh2018class' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Bhatta_Shrestha_Nepal_Pandey_Koirala_2020' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `kaushal2016' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `basnet2018improving' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `300D' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `koirala-niraula-2021-npvec1' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `rajan_nepalibert_2021' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `milanmg_bert-nepali_2022' on page 4 undefined on input line 3.
+
+
+LaTeX Warning: Citation `NEURIPS2019_c04c19c2' on page 4 undefined on input line 4.
+
+
+LaTeX Warning: Citation `300D' on page 4 undefined on input line 5.
+
+
+LaTeX Warning: Citation `koirala-niraula-2021-npvec1' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Citation `rajan_nepalibert_2021' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Citation `milanmg_bert-nepali_2022' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Citation `NEURIPS2019_c04c19c2' on page 4 undefined on input line 7.
+
 )
 Underfull \hbox (badness 10000) in paragraph at lines 2--58
 
@@ -1009,8 +1113,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--58
 
  (./chapter/TheoriticalBaackground.tex
 Chapter 3.
+
+LaTeX Warning: Citation `vaswani2023attention' on page 6 undefined on input line 5.
+
+
+LaTeX Warning: Citation `bommasani2021opportunities' on page 6 undefined on input line 6.
+
 File: ./img/attention_research_1.png Graphic file (type bmp)
 <./img/attention_research_1.png>
+
+LaTeX Warning: Citation `vaswani2023attention' on page 6 undefined on input line 11.
+
+
+LaTeX Warning: Citation `vaswani2023attention' on page 6 undefined on input line 11.
+
+
+LaTeX Warning: Citation `devlin2019bert' on page 6 undefined on input line 16.
+
 [6
 
 
@@ -1019,6 +1138,13 @@ File: ./img/attention_research_1.png Graphic file (type bmp)
 ]
 File: ./img/bertarchitecture.png Graphic file (type bmp)
 <./img/bertarchitecture.png>
+
+
+LaTeX Warning: Citation `Gundapu' on page 7 undefined on input line 21.
+
+
+LaTeX Warning: Citation `Gundapu' on page 7 undefined on input line 21.
+
 ) [7]
 \openout2 = `chapter/Methodology.aux'.
 
@@ -1065,73 +1191,51 @@ LaTeX Info: Redefining \ttfamily on input line 29.
 
  (./chapter/WorkCompleted.tex
 Chapter 5.
+LaTeX Info: Redefining \rmfamily on input line 13.
+LaTeX Info: Redefining \sffamily on input line 13.
+LaTeX Info: Redefining \ttfamily on input line 13.
+LaTeX Info: Redefining \rmfamily on input line 13.
+LaTeX Info: Redefining \sffamily on input line 13.
+LaTeX Info: Redefining \ttfamily on input line 13.
+LaTeX Info: Redefining \rmfamily on input line 14.
+LaTeX Info: Redefining \sffamily on input line 14.
+LaTeX Info: Redefining \ttfamily on input line 14.
+LaTeX Info: Redefining \rmfamily on input line 14.
+LaTeX Info: Redefining \sffamily on input line 14.
+LaTeX Info: Redefining \ttfamily on input line 14.
+LaTeX Info: Redefining \rmfamily on input line 14.
+LaTeX Info: Redefining \sffamily on input line 14.
+LaTeX Info: Redefining \ttfamily on input line 14.
+
+Overfull \hbox (1.90141pt too wide) in paragraph at lines 16--18
+[]\TU/lmr/bx/n/12 CustomBERTTokenizer: \TU/lmr/m/n/12 A more advanced tokenizer, \TU/lmtt/m/n/12 CustomBERTTokenizer\TU/lmr/m/n/12 ,
+ []
+
 [12
 
 
 
 
-]) [13]
-\openout2 = `chapter/WorkToBeDone.aux'.
-
- (./chapter/WorkToBeDone.tex
-Chapter 6.
-) [14
-
-
-
-
-]
-\openout2 = `chapter/System_Design.aux'.
-
- (./chapter/System_Design.tex
-Chapter 7.
-[15
-
-
-
-
-]) [16] [17]
-\openout2 = `chapter/Implementation_Plan.aux'.
-
- (./chapter/Implementation_Plan.tex
-Chapter 8.
-
-Underfull \hbox (badness 1112) in paragraph at lines 26--26
- \TU/lmr/m/n/12 Study
- []
-
-[18
-
-
-
-
-] [19]) [20]
-\openout2 = `chapter/expected_outcome.aux'.
-
- (./chapter/expected_outcome.tex
-Chapter 9.
-) [21
-
-
-
-
-] (./main.bbl [22
-
-
-
-] [23]) [24] (./main.aux (./title.aux) (./intro.aux) (./chapter/chapter_1.aux) (./chapter/chapter_2.aux) (./chapter/TheoriticalBaackground.aux) (./chapter/Methodology.aux) (./chapter/WorkCompleted.aux) (./chapter/WorkToBeDone.aux) (./chapter/System_Design.aux) (./chapter/Implementation_Plan.aux) (./chapter/expected_outcome.aux))
+] [13] [14] [15] (./main.aux (./title.aux) (./intro.aux) (./chapter/chapter_1.aux) (./chapter/chapter_2.aux) (./chapter/TheoriticalBaackground.aux) (./chapter/Methodology.aux) (./chapter/WorkCompleted.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
- ) 
+
+
+LaTeX Warning: There were undefined references.
+
+ ) )
+(\end occurred when \iftrue on line 61 was incomplete)
+(\end occurred when \ifx on line 61 was incomplete)
+(\end occurred when \ifnum on line 61 was incomplete) 
 Here is how much of TeX's memory you used:
- 25336 strings out of 476798
- 561475 string characters out of 5804171
- 1934839 words of memory out of 5000000
- 46762 multiletter control sequences out of 15000+600000
+ 24870 strings out of 476798
+ 549227 string characters out of 5804171
+ 1932839 words of memory out of 5000000
+ 46327 multiletter control sequences out of 15000+600000
  565481 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 103i,8n,107p,2068b,950s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,8n,107p,2060b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (30 pages, 355508 bytes).
+Output written on main.xdv (20 pages, 213200 bytes).
