@@ -417,6 +417,9 @@ OUTPUT chapter/WorkCompleted.aux
 INPUT ./chapter/WorkCompleted.tex
 INPUT ./chapter/WorkCompleted.tex
 INPUT chapter/WorkCompleted.tex
+INPUT ./img/training-graph.png
+INPUT ./img/training-graph.png
+INPUT ./img/training-graph.png
 INPUT main.aux
 INPUT ./title.aux
 INPUT ./title.aux

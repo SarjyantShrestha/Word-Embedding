@@ -8,60 +8,47 @@ A level-1 auxiliary file: chapter/chapter_2.aux
 A level-1 auxiliary file: chapter/TheoriticalBaackground.aux
 A level-1 auxiliary file: chapter/Methodology.aux
 A level-1 auxiliary file: chapter/WorkCompleted.aux
-A level-1 auxiliary file: chapter/WorkToBeDone.aux
-A level-1 auxiliary file: chapter/System_Design.aux
-A level-1 auxiliary file: chapter/Implementation_Plan.aux
-A level-1 auxiliary file: chapter/expected_outcome.aux
-The style file: unsrt.bst
-Database file #1: ref.bib
-Warning--entry type for "300D" isn't style-file defined
---line 145 of file ref.bib
-Warning--empty booktitle in NepaliBERT
-Warning--empty booktitle in questionanswer
-Warning--empty author in reviewOnWordEmbedding
-Warning--empty booktitle in reviewOnWordEmbedding
-Warning--empty booktitle in Singh2019NepaliMT
-Warning--empty booktitle in kaushal2016
-Warning--empty booktitle in basnet2018improving
+I found no \bibdata command---while reading file main.aux
+I found no \bibstyle command---while reading file main.aux
 You've used 26 entries,
-            1791 wiz_defined-function locations,
-            596 strings with 8833 characters,
-and the built_in function-call counts, 6590 in all, are:
-= -- 526
-> -- 366
-< -- 10
-+ -- 130
-- -- 104
-* -- 398
-:= -- 986
-add.period$ -- 76
-call.type$ -- 26
-change.case$ -- 26
+            0 wiz_defined-function locations,
+            124 strings with 1249 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 300
-empty$ -- 656
-format.name$ -- 104
-if$ -- 1528
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 16
-newline$ -- 126
-num.names$ -- 33
-pop$ -- 150
-preamble$ -- 1
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
 purify$ -- 0
 quote$ -- 0
-skip$ -- 196
+skip$ -- 0
 stack$ -- 0
-substring$ -- 302
-swap$ -- 107
-text.length$ -- 10
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 7
-while$ -- 56
-width$ -- 28
-write$ -- 263
-(There were 8 warnings)
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 0
+(There were 2 error messages)

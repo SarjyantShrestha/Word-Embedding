@@ -47,27 +47,73 @@
 \section{Training Loop}
 \begin{itemize}
     \item \textbf{Training Workflow:} The model is trained using a cross-entropy loss function, which measures how well the predicted token IDs match the original token IDs. The optimizer (Adam) updates the model parameters to minimize this loss. The training loop runs over multiple epochs.
-    \item \textbf{Testing Workflow:} The model's performance is evaluated on the test set after each epoch. The test loss is calculated using the same MLM loss function.
+    \item \textbf{Validation Workflow:} The model's performance is evaluated on the validation set after each epoch. The validation loss is calculated using the same MLM loss function.
     \item \textbf{Loss Tracking:} Loss values for both the training and testing datasets are recorded after each epoch, and these are saved into text files for further analysis.
 \end{itemize}
 
 \section{Data Splitting and Loader Implementation}
 \begin{itemize}
-    \item \textbf{Training and Test Split:} The dataset is divided into training and testing sets, with 80\% used for training and 20\% for testing.
+    \item \textbf{Training and Validation Split:} The dataset is divided into training and validation sets, with 80\% used for training and 20\% for validation.
     \item \textbf{DataLoader Implementation:} DataLoaders are used to manage batching, shuffling, and pinning memory for efficient data loading during training and testing.
 \end{itemize}
 
 \section{Performance Metrics}
-Loss during training and testing is recorded and plotted against epochs to monitor performance improvements. A plot showing the loss values over epochs is generated, allowing us to monitor the model's training progress.
-Outputs:
+Loss during training and validation is recorded and plotted against epochs to monitor performance improvements. A plot showing the loss values over epochs is generated, allowing us to monitor the model's training progress.
+\begin{figure}[hbt!]
+    \center{
+        \includegraphics[width=1\textwidth]{./img/training-graph.png}
+        \caption{Training graph}
+    }
+\end{figure}
 
-%SHOW GRAPHS
+\section{Future Work}
 
-\section{Pending Tasks}
-\begin{itemize}
-    \item Evaluate the trained BERT model on downstream Nepali NLP tasks.
-    \item Fine-tune the tokenizer and training hyperparameters for improved performance.
-    \item Explore potential model optimizations, such as reducing memory overhead for larger datasets.
-\end{itemize}
+Our ongoing efforts focus on generating and evaluating Nepali text embeddings for enhanced information retrieval and related applications. The following steps outline the key areas of work in progress:
+
+\begin{enumerate}
+    \item \textbf{Embedding Generation:}
+    \begin{itemize}
+        \item Generate embeddings using the \textit{original model} and the \textit{fine-tuned model} on test articles to avoid data leakage from training data.
+    \end{itemize}
+
+    \item \textbf{Text Splitting:}
+    \begin{itemize}
+        \item Apply techniques such as \textit{LangChain recursive splitting} to divide articles into smaller text chunks, facilitating effective embedding and retrieval.
+    \end{itemize}
+
+    \item \textbf{Embedding Comparison:}
+    \begin{itemize}
+        \item Compare embeddings from both models for each text chunk using similarity metrics such as \textit{cosine similarity} or other distance measures.
+    \end{itemize}
+
+    \item \textbf{Question Generation:}
+    \begin{itemize}
+        \item Use high-performing language models, such as \textit{LLaMA 3.1 70B}, to generate contextually relevant questions from the text chunks.
+    \end{itemize}
+
+    \item \textbf{Information Retrieval Evaluation:}
+    \begin{itemize}
+        \item Retrieve \textit{Top-K text chunks} based on embedding similarity scores for each question and evaluate performance using metrics like \textit{hit rate}.
+    \end{itemize}
+
+    \item \textbf{LLM Response Testing:}
+    \begin{itemize}
+        \item Validate the retrieved information by prompting the LLM with retrieved text and assessing its accuracy in answering the generated questions.
+    \end{itemize}
+
+    % \item \textbf{Advanced Retrieval Optimization:}
+    % \begin{itemize}
+    %     \item Experiment with \textit{graph-based embedding storage} for improved retrieval accuracy and efficiency.
+    % \end{itemize}
+
+    % \item \textbf{Future Scope:}
+    % \begin{itemize}
+    %     \item Extend embeddings to other applications, such as \textit{sentiment analysis} and \textit{recommendation systems}.
+    %     \item Optimize information retrieval for \textit{low-resource languages} and evaluate performance using tools such as \textit{RAGAS}.
+    % \end{itemize}
+\end{enumerate}
+
+This approach provides a structured framework for evaluating the fine-tuned model while enabling future advancements in information retrieval and related applications.
+
 
 \end{document}
