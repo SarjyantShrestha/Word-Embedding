@@ -43,10 +43,11 @@
 \contentsline {section}{\numberline {7.5}Training Loop}{20}{}%
 \contentsline {section}{\numberline {7.6}Data Splitting and Loader Implementation}{20}{}%
 \contentsline {section}{\numberline {7.7}Performance Metrics}{20}{}%
-\contentsline {section}{\numberline {7.8}Future Work}{21}{}%
-\contentsline {chapter}{\numberline {8}Work to be done}{23}{}%
-\contentsline {section}{\numberline {8.1}Expand Dataset Further}{23}{}%
-\contentsline {section}{\numberline {8.2}Prepare Transformer-Based Embedding Layer and Self-Attention Layers}{23}{}%
-\contentsline {section}{\numberline {8.3}Train, Test, and Validate the Model}{23}{}%
-\contentsline {section}{\numberline {8.4}Hyperparameter Tuning}{23}{}%
-\contentsline {chapter}{References}{26}{}%
+\contentsline {chapter}{\numberline {8}Future Work}{22}{}%
+\contentsline {section}{\numberline {8.1}Lemmatization}{22}{}%
+\contentsline {section}{\numberline {8.2}Embedding Generation}{22}{}%
+\contentsline {section}{\numberline {8.3}Embedding Comparison}{22}{}%
+\contentsline {section}{\numberline {8.4}Question Generation}{22}{}%
+\contentsline {section}{\numberline {8.5}Information Retrieval Evaluation}{22}{}%
+\contentsline {section}{\numberline {8.6}LLM Response Testing}{22}{}%
+\contentsline {chapter}{References}{25}{}%

@@ -1,12 +1,22 @@
-\chapter{Work to be done}
-\section{Expand Dataset Further}
-Increase the size and diversity of the dataset by collecting more Nepali legal texts. This will improve the model's ability to generalize and perform well on a wider range of inputs.
+\chapter{Future Work}
 
-\section{Prepare Transformer-Based Embedding Layer and Self-Attention Layers}
-Implement the core components of a transformer model, including embedding layers to convert words into numerical representations and self-attention layers to capture dependencies between words in the text. These components are crucial for understanding contextual relationships within the data.
+\section{Lemmatization}
+Apply lemmatization techniques during preprocessing to standardize text and improve embedding quality.
 
-\section{Train, Test, and Validate the Model}
-Train the model using the expanded dataset to learn from the data and optimize its performance on legal text tasks. Test the model on separate datasets to evaluate its accuracy and generalization capabilities. Validate the model's performance against predefined metrics to ensure it meets quality standards.
+\section{Embedding Generation}
+Generate embeddings using the \textit{original model} and the \textit{fine-tuned model} on test articles to avoid data leakage from training data.
 
-\section{Hyperparameter Tuning}
-Fine-tune the model by adjusting hyperparameters such as learning rate, batch size, and dropout rates. This process aims to optimize model performance and efficiency, leading to better results during training and inference.
+% \section{Text Splitting}
+% Apply techniques such as \textit{LangChain recursive splitting} to divide articles into smaller text chunks, facilitating effective embedding and retrieval.
+
+\section{Embedding Comparison}
+Compare embeddings from both models for each text chunk using similarity metrics such as \textit{cosine similarity} or other distance measures.
+
+\section{Question Generation}
+Use high-performing language models, such as \textit{LLaMA 3.1 70B}, to generate contextually relevant questions from the text chunks.
+
+\section{Information Retrieval Evaluation}
+Retrieve \textit{Top-K text chunks} based on embedding similarity scores for each question and evaluate performance using metrics like \textit{hit rate}.
+
+\section{LLM Response Testing}
+Validate the retrieved information by prompting the LLM with retrieved text and assessing its accuracy in answering the generated questions.

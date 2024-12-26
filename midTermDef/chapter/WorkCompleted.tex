@@ -11,7 +11,7 @@
     \begin{itemize}
         \item \textit{Character Ranges:} It checks whether a character falls within the Devanagari script (the script used for Nepali) and processes it accordingly.
         \item \textit{Punctuation Handling:} It accounts for Nepali punctuation marks (\textsanskrit{।}, \textsanskrit{॥}, and others) and ensures they are treated as distinct tokens during tokenization.
-        \item \textit{Suffix Handling:} Common Nepali suffixes and postpositions (like \textsanskrit{ले}, \textsanskrit{को}, \textsanskrit{बाट}) are identified and separated as individual tokens to preserve their semantic roles in the language.
+        \item \textit{Suffix Handling (Stemming):} Common Nepali suffixes and postpositions (like \textsanskrit{ले}, \textsanskrit{को}, \textsanskrit{बाट}) are identified and separated as individual tokens to preserve their semantic roles in the language.
     \end{itemize}
     \item \textbf{CustomBERTTokenizer:} A more advanced tokenizer, \texttt{CustomBERTTokenizer}, was built to handle:
     \begin{itemize}
@@ -65,53 +65,4 @@ Loss during training and validation is recorded and plotted against epochs to mo
         \caption{Training graph}
     }
 \end{figure}
-
-\section{Future Work}
-
-Our ongoing efforts focus on generating and evaluating Nepali text embeddings for enhanced information retrieval and related applications. The following steps outline the key areas of work in progress:
-
-\begin{enumerate}
-    \item \textbf{Embedding Generation:}
-    \begin{itemize}
-        \item Generate embeddings using the \textit{original model} and the \textit{fine-tuned model} on test articles to avoid data leakage from training data.
-    \end{itemize}
-
-    \item \textbf{Text Splitting:}
-    \begin{itemize}
-        \item Apply techniques such as \textit{LangChain recursive splitting} to divide articles into smaller text chunks, facilitating effective embedding and retrieval.
-    \end{itemize}
-
-    \item \textbf{Embedding Comparison:}
-    \begin{itemize}
-        \item Compare embeddings from both models for each text chunk using similarity metrics such as \textit{cosine similarity} or other distance measures.
-    \end{itemize}
-
-    \item \textbf{Question Generation:}
-    \begin{itemize}
-        \item Use high-performing language models, such as \textit{LLaMA 3.1 70B}, to generate contextually relevant questions from the text chunks.
-    \end{itemize}
-
-    \item \textbf{Information Retrieval Evaluation:}
-    \begin{itemize}
-        \item Retrieve \textit{Top-K text chunks} based on embedding similarity scores for each question and evaluate performance using metrics like \textit{hit rate}.
-    \end{itemize}
-
-    \item \textbf{LLM Response Testing:}
-    \begin{itemize}
-        \item Validate the retrieved information by prompting the LLM with retrieved text and assessing its accuracy in answering the generated questions.
-    \end{itemize}
-
-    % \item \textbf{Advanced Retrieval Optimization:}
-    % \begin{itemize}
-    %     \item Experiment with \textit{graph-based embedding storage} for improved retrieval accuracy and efficiency.
-    % \end{itemize}
-
-    % \item \textbf{Future Scope:}
-    % \begin{itemize}
-    %     \item Extend embeddings to other applications, such as \textit{sentiment analysis} and \textit{recommendation systems}.
-    %     \item Optimize information retrieval for \textit{low-resource languages} and evaluate performance using tools such as \textit{RAGAS}.
-    % \end{itemize}
-\end{enumerate}
-
-This approach provides a structured framework for evaluating the fine-tuned model while enabling future advancements in information retrieval and related applications.
 
